@@ -33,14 +33,14 @@ input{
   border:none;
 }
 
-input, textarea{
+/* input, textarea{
   margin: 10px 0;
   width: 100%;
   height: 50px;
   background: #53585D;
   border-radius: 4px;
   padding: 5px;
-}
+} */
 a {
   color: inherit;
 } 

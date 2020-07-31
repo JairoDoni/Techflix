@@ -1,0 +1,14 @@
+{
+  "categorias":[
+    {
+    "name":"Front End",
+    "description":"Uma categora ai.",
+    "color":"#cbd1ff"
+    },
+    {
+    "name":"Backend",
+    "description":"Uma categora ai.",
+    "color":"#727111"
+    }
+  ]
+}
