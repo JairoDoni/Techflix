@@ -6,7 +6,7 @@ import Cadastro from './pages/cadastro/Video';
 import Categoria from './pages/cadastro/Categoria';
 import Error404 from './pages/Error404';
 
-export default function Routes(){
+export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
@@ -18,6 +18,3 @@ export default function Routes(){
     </BrowserRouter>
   );
 }
-
-
-
