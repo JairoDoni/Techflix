@@ -35,10 +35,9 @@ export default function CadastroCategoria() {
   }
 
   useEffect(() => {
-    // const URL_TOP = window.location.hostname.includes('localhost')
-    // ? 'http://localhost:8080/categorias'
-    // : 'http://localhost:8080/heroku/categorias';
-    const URL_TOP = 'http://localhost:8080/categorias';
+    const URL_TOP = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080'
+      : 'https://techflixseries.herokuapp.com/categorias';
 
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
