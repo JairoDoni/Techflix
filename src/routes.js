@@ -12,7 +12,7 @@ export default function Routes() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/cadastro/video" component={Cadastro} />
-        <Route path="/cadastro/categoria" component={Categoria} />
+        <Route path="/register/category" component={Categoria} />
         <Route component={Error404} />
       </Switch>
     </BrowserRouter>

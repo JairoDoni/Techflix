@@ -1,0 +1,7 @@
+const URL_BACKEND = window.location.hostname.includes('localhost')
+  ? 'http://localhost:0000' //servidorlocal
+  : 'https://techflixseries.herokuapp.com'; //link servidor online(em produção)
+
+export default {
+  URL_BACKEND,
+};

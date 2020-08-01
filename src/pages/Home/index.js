@@ -1,46 +1,51 @@
-import React from 'react';
-import Menu from '../../components/Menu';
-import dadosIniciais from '../../data/dados_iniciais.json'
+import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
-
+import PageDefault from '../../components/PageDefault';
+import categoriesRepository from '../../repositories/categories';
 
 function Home() {
+  const [initialDatas, setInitialDatas] = useState([]);
+
+  useEffect(() => {
+    categoriesRepository.getAllWithVideos()
+      .then((categoriesWithVideos) => {
+        console.log(categoriesWithVideos);
+        setInitialDatas(categoriesWithVideos);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
   return (
-    <div style={{background:"#141414"}}>
-      <Menu />
-      <BannerMain
-        // videoTitle={dadosIniciais.categorias[0], videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        // videoDescription={"O que faz uma desenvolvedora front-end? #HipstersPontoTube"}
-      />
-     <Carousel
-      ignoreFirstVideo
-      category={dadosIniciais.categorias[0]}
-     />
-     <Carousel
-      ignoreFirstVideo
-      category={dadosIniciais.categorias[1]}
-     />
-     <Carousel
-      ignoreFirstVideo
-      category={dadosIniciais.categorias[2]}
-     />
-     <Carousel
-      ignoreFirstVideo
-      category={dadosIniciais.categorias[3]}
-     />
-     <Carousel
-      ignoreFirstVideo
-      category={dadosIniciais.categorias[4]}
-     />
-     <Carousel
-      ignoreFirstVideo
-      category={dadosIniciais.categorias[5]}
-     />
-     <Footer/>
-    </div>
+    <PageDefault paddingAll={0}>
+      {initialDatas.length === 0 && (<div>Loading...</div>)}
+
+      {initialDatas.map((category, indice) => {
+        if (indice === 0) {
+          return (
+            <div key={category.id}>
+              <BannerMain
+                videoTitle={initialDatas[0].videos[0].titulo}
+                url={initialDatas[0].videos[0].url}
+                videoDescription="O que faz uma desenvolvedora front-end? #HipstersPontoTube"
+              />
+              <Carousel
+                ignoreFirstVideo
+                category={initialDatas[0]}
+              />
+            </div>
+          );
+        }
+
+        return (
+          <Carousel
+            key={category.id}
+            category={category}
+          />
+        );
+      })}
+    </PageDefault>
   );
 }
 
