@@ -7,7 +7,7 @@ import useForm from '../../../hooks/useForm';
 
 export default function CadastroCategoria() {
   const initialValors = {
-    titulo: '',
+    title: '',
     description: '',
     color: '',
   };
@@ -26,7 +26,7 @@ export default function CadastroCategoria() {
   useEffect(() => {
     const URL_TOP = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080'
-      : 'https://techflixseries.herokuapp.com/categorias';
+      : 'https://techflixseries.herokuapp.com/categories';
 
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
@@ -59,15 +59,15 @@ export default function CadastroCategoria() {
       <h1>
         Cadastro de Categoria:
         {' '}
-        {values.titulo}
+        {values.title}
       </h1>
       <form onSubmit={handleSubmit}>
         <div>
           <FormField
             label="Nome da Categoria"
             type="text"
-            name="titulo"
-            value={values.titulo}
+            name="title"
+            value={values.title}
             onChange={handleChange}
           />
           <FormField
@@ -104,7 +104,7 @@ export default function CadastroCategoria() {
       <ul>
         {categories.map((category) => (
           <li key={`${category}`}>
-            {category.titulo}
+            {category.title}
           </li>
         ))}
       </ul>

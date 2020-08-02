@@ -10,7 +10,6 @@ function Home() {
   useEffect(() => {
     categoriesRepository.getAllWithVideos()
       .then((categoriesWithVideos) => {
-        console.log(categoriesWithVideos);
         setInitialDatas(categoriesWithVideos);
       })
       .catch((err) => {
@@ -26,7 +25,7 @@ function Home() {
           return (
             <div key={category.id}>
               <BannerMain
-                videoTitle={initialDatas[0].videos[0].titulo}
+                videoTitle={initialDatas[0].videos[0].title}
                 url={initialDatas[0].videos[0].url}
                 videoDescription="O que faz uma desenvolvedora front-end? #HipstersPontoTube"
               />

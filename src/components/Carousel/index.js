@@ -1,16 +1,19 @@
 import React from 'react';
-import { VideoCardGroupContainer, VideoCardList, Title, ExtraLink } from './styles';
+import {
+  VideoCardGroupContainer, VideoCardList, Title, ExtraLink,
+} from './styles';
 import VideoCard from './components/VideoCard';
 
-import Slider, { SliderItem }  from './components/Slider';
+import Slider, { SliderItem } from './components/Slider';
 
 function Carrousel({
   ignoreFirstVideo,
   category,
 }) {
-  const categoryTitle = category.titulo;
+  const categoryTitle = category.title;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
+  // eslint-disable-next-line prefer-destructuring
   const videos = category.videos;
   return (
     <VideoCardGroupContainer>
@@ -19,11 +22,12 @@ function Carrousel({
           <Title style={{ backgroundColor: categoryColor || 'red' }}>
             {categoryTitle}
           </Title>
-          {categoryExtraLink && 
+          {categoryExtraLink
+            && (
             <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}  
+              {categoryExtraLink.text}
             </ExtraLink>
-          }
+            )}
         </>
       )}
       <Slider>
@@ -33,9 +37,9 @@ function Carrousel({
           }
 
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={video.title}>
               <VideoCard
-                videoTitle={video.titulo}
+                videoTitle={video.title}
                 videoURL={video.url}
                 categoryColor={categoryColor}
               />
