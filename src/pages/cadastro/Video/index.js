@@ -17,7 +17,6 @@ import styles from './styles';
 
 function CadastroVideo() {
   const classes = styles.useStyles();
-  const history = useHistory();
   const { handleChange, values } = useForm({
     title: '',
     url: '',
