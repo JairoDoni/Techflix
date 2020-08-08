@@ -11,7 +11,7 @@ export default function Routes() {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/cadastro/video" component={Register} />
+        <Route path="/register/video" component={Register} />
         <Route path="/register/category" component={Category} />
         <Route component={Error404} />
       </Switch>

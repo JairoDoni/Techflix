@@ -18,7 +18,6 @@ function create(objectVideo) {
 
       throw new Error('Não foi possivel pegar os dados :(');
     });
-  // console.log(config.URL_BACKEND);
 }
 
 export default {

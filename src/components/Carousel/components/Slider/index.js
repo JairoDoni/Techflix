@@ -16,10 +16,10 @@ const Container = styled.ul`
     height: 30px;
     transform: initial;
     &:before {
-      font-size: 30px;
+      font-size: 35px;
     }
   }
-  
+
   .slick-prev {
     left: 0;
   }
@@ -29,15 +29,21 @@ const Container = styled.ul`
 `;
 
 export const SliderItem = styled.li`
-  margin-right: 16px;
+  margin-right: 30px;
+  
   img {
     margin: 16px;
     width: 298px;
     height: 197px;
     object-fit: cover;
   }
-`;
 
+  &:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+`;
 
 const Slider = ({ children }) => (
   <Container>
@@ -55,4 +61,4 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+export default Slider;

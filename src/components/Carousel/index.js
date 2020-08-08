@@ -3,7 +3,6 @@ import {
   VideoCardGroupContainer, VideoCardList, Title, ExtraLink,
 } from './styles';
 import VideoCard from './components/VideoCard';
-
 import Slider, { SliderItem } from './components/Slider';
 
 function Carrousel({
@@ -15,6 +14,7 @@ function Carrousel({
   const categoryExtraLink = category.link_extra;
   // eslint-disable-next-line prefer-destructuring
   const videos = category.videos;
+
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -38,6 +38,7 @@ function Carrousel({
 
           return (
             <SliderItem key={video.title}>
+
               <VideoCard
                 videoTitle={video.title}
                 videoURL={video.url}
