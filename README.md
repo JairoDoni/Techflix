@@ -6,7 +6,7 @@ Projeto em React feito na "Imersão React Alura".
 
 <div align="center">
 
-![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![NodeJS_Badge][server_nodejs_badge] ![React_Badge][web_react_badge] ![React_Native_Badge][mobile_react-native_badge] ![GitHub][repository_license_badge]
+![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![React_Badge][web_react_badge] ![GitHub][repository_license_badge]
 <br>
 <p align="center">
   <img alt="bethehero" src=".github/techflix.png" width="100%">
@@ -117,11 +117,9 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 [node_version_badge]: https://img.shields.io/badge/node-12.18.0-green
 
-[npm_version_badge]: https://img.shields.io/badge/npm-6.14.4-red
+[npm_version_badge]: https://img.shields.io/badge/npm-6.14.5-red
 
 [web_react_badge]: https://img.shields.io/badge/web-react-blue
-
-[mobile_react-native_badge]: https://img.shields.io/badge/mobile-react%20native-blueviolet
 
 [server_nodejs_badge]: https://img.shields.io/badge/server-nodejs-important
 
