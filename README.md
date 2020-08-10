@@ -1,5 +1,3 @@
-# Techflix
-Projeto em React feito na "Imersão React Alura".
 <h1 align="center">
     <img alt="Techflix" title="Techflix" src=".github/Logo.png" width="352px" />
 </h1>
@@ -16,7 +14,7 @@ Projeto em React feito na "Imersão React Alura".
 
 ## 💻 Projeto
 
-A "Techflix" é um projeto inspirado na Netflix, utilizando videos do youtube como fonte de conteudo ou divulgação, podendo assitir os videos do proprio site e cadastrar novos videos e categorias.
+A "Techflix" é um projeto inspirado na Netflix, utilizando videos do youtube como fonte de conteudo ou divulgação, podendo assitir os videos do proprio site e cadastrar novos videos e categorias, feito na "Imersão React Alura".
 
 ## 🔖 Layout
 
