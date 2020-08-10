@@ -137,7 +137,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 [commitlint]: https://github.com/conventional-changelog/commitlint
 
-[styled_components]: https://styled-components.com/m/
+[styled_components]: https://styled-components.com
 
 [react_router_dom]: https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom
 
