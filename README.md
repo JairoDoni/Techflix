@@ -1,7 +1,7 @@
 # Techflix
 Projeto em React feito na "Imersão React Alura".
 <h1 align="center">
-    <img alt="Be The Hero" title="Be The Hero" src=".github/hero.svg" width="352px" />
+    <img alt="Techflix" title="Techflix" src=".github/Logo.png" width="352px" />
 </h1>
 
 <div align="center">
