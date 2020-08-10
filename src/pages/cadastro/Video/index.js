@@ -46,7 +46,6 @@ function CadastroVideo() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    handleAlertSuccess();
     // eslint-disable-next-line arrow-body-style
     const categorySelected = categories.find((category) => {
       return category.title === values.category;
