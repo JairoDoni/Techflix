@@ -13,6 +13,9 @@
 <br>
 
 <p align="center">
+   <strong>
+      <a href="#-Preview">Preview</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
   <strong>
       <a href="#-projeto">Projeto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
   </strong>
@@ -38,11 +41,17 @@
 
 </div>
 
-## 💻 Projeto
+
+## **✨ Preview**
+#### Sistema Online: https://techflixseries.vercel.app
+
+---
+
+**## 💻 Projeto**
 
 A "Techflix" é um projeto inspirado na Netflix, utilizando videos do youtube como fonte de conteudo ou divulgação, podendo assitir os videos do proprio site e cadastrar novos videos e categorias, feito na "Imersão React Alura".
 
-## 🔖 Layout
+**## 🔖 Layout**
 
 Você pode visualizar o layout do projeto no formato através [desse link](https://www.figma.com/file/7Y88iwIZCqJJuCmHL2MkDZ/AluraFlix?node-id=276%3A349). Lembrando que você irá precisar ter uma conta no [Figma](http://figma.com/).
 
