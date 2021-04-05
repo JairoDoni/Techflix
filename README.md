@@ -1,11 +1,37 @@
+<div align="center">
 <h1 align="center">
     <img alt="Techflix" title="Techflix" src=".github/Logo.png" width="352px" />
 </h1>
-
+    
+![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![React_Badge][web_react_badge] ![GitHub][repository_license_badge]
+</div>
 <div align="center">
 
-![Npm_Badge][npm_version_badge] ![Node_Badge][node_version_badge] ![React_Badge][web_react_badge] ![GitHub][repository_license_badge]
+
+
+
 <br>
+
+<p align="center">
+  <strong>
+      <a href="#-projeto">Projeto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-layout">Layout</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-como-executar-o-projeto">Executando</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+  </strong>
+  <strong>
+      <a href="#-referências">Referências</a>
+  </strong>
+</p>
+
+<br>
+
 <p align="center">
   <img alt="bethehero" src=".github/techflix.png" width="100%">
 </p>
@@ -42,7 +68,7 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
 
 
 
-## **:computer: TECNOLOGIAS**
+## **💻 Tecnologias**
 
 
 #### **Website** ([React][react])
@@ -64,7 +90,7 @@ Você pode visualizar o layout do projeto no formato através [desse link](https
 - Fontes: **[Roboto][font_roboto]**
 
 
-## **:pushpin: COMO UTILIZAR**
+## **🚀 Como executar o projeto**
 
 ### Configurações Iniciais
 
@@ -97,7 +123,7 @@ $ yarn dev
 
 > Se o browser não abrir automaticamente, acesse: http://localhost:3000.
 
-## **:books: REFERÊNCIAS**
+## **📚 Referências**
 
 - [ReactJS](https://reactjs.org/docs/getting-started.html) | [ReactJS pt-BR](https://pt-br.reactjs.org/docs/getting-started.html)
 - [React Native](https://reactnative.dev/docs/getting-started)
